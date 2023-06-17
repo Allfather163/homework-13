@@ -2,15 +2,17 @@ public class Main {
     public static void main(String[] args) {
         Author Dostoevskiy = new Author("Федор", "Достаевский");
 
-        Book crimeAndPunishment = new Book("Преступление и наказание", 215, Dostoevskiy);
+        book crimeAndPunishment = new book("Преступление и наказание", 215, Dostoevskiy);
 
         Author Anshtein = new Author("Альберт", "Энштэйн");
 
-        Book theory = new Book("Теория относительности", 1921, Anshtein);
+        book theory = new book("Теория относительности", 1921, Anshtein);
 
-        crimeAndPunishment.Year(6666);
+        crimeAndPunishment.setYear(6666);
 
-        theory.Year(2000);
+        theory.setYear(2000);
+
+        System.out.println("Книга: " + crimeAndPunishment.getName() + " опубликована в " + crimeAndPunishment.getYear() + " автора книги: " + crimeAndPunishment.getAuthor().getNameAuthor + " " + crimeAndPunishment.getAuthor().getSurnameAuthor());
     }
 }
 
