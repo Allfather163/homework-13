@@ -6,7 +6,7 @@
 
 
 
-    public Book(String name, int year,  Author) {
+    public Book(String name, int year,  Author author)  {
                 this.name = name;
                 this.year = year;
                 this.author = author;
@@ -15,13 +15,13 @@
 
                 return this.name;
             }
-            public int year () {
+            public int getYear () {
 
                 return this.year;
             }
-            public void setPublisherYear ( int publisherYear){
+            public void setYear ( int publisherYear){
 
-                this.year = year;
+                this.year = publisherYear;
             }
 
 
