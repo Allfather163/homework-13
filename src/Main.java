@@ -1,5 +1,7 @@
 public class Main {
+
     public static void main(String[] args) {
+
         Author Dostoevskiy = new Author("Федор", "Достаевский");
 
         Book crimeAndPunishment = new Book("Преступление и наказание", 215, Dostoevskiy);
@@ -15,4 +17,3 @@ public class Main {
         System.out.println("Книга: " + crimeAndPunishment.getName() + " опубликована в " + crimeAndPunishment.getYear() + " автора книги: " + crimeAndPunishment.getAuthor().getNameAuthor() + " " + crimeAndPunishment.getAuthor().getSurnameAuthor());
     }
 }
-
