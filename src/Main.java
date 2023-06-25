@@ -16,4 +16,5 @@ public class Main {
 
         System.out.println("Книга: " + crimeAndPunishment.getName() + " опубликована в " + crimeAndPunishment.getYear() + " автора книги: " + crimeAndPunishment.getAuthor().getNameAuthor() + " " + crimeAndPunishment.getAuthor().getSurnameAuthor());
     }
+
 }
