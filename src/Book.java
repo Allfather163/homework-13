@@ -35,29 +35,27 @@ public class Book {
     }
 
     public String toString() {
-        return "Автор: " + this.name + " " + this.author;
+        return "Книга: " + this.name + " " + this.author + " опубликована в " + year;
     }
 
 
-public boolean equals(Object Book) {
-    if (Book == null) {
-        return false;
+    public boolean equals(Object book) {
+        if (book == null) {
+            return false;
+        }
+        if (this == book) {
+            return true;
+        }
+        if (this.getClass() != book.getClass()) {
+            return false;
+        }
+        Book book1 = (Book) book;
+        return name.equals((author.getName()) && name.equals(author.Author));
     }
-    if (this == Book) {
-        return true;
-    }
-    if (this.getClass() != Book.getClass()) {
-        return false;
-    }
-    Author author = (Author) Book;
-    return name.equals((author.getName()) && name.equals(author.Author));
-}
 
 
     public int hashCode() {
-        return java.util.Objects.hash(name, author);
+        return java.util.Objects.hash(name, author, year);
 
     }
-
-
 }

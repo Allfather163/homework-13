@@ -6,9 +6,11 @@ public class Author {
         this.nameAuthor = nameAuthor;
         this.surnameAuthor = surnameAuthor;
     }
+
     public String getNameAuthor() {
         return this.nameAuthor;
     }
+
     public String getSurnameAuthor() {
         return this.surnameAuthor;
     }
@@ -17,7 +19,9 @@ public class Author {
 
         return "Автор: " + this.nameAuthor + " " + this.surnameAuthor;
 
-    }public boolean equals(Object authors) {
+    }
+
+    public boolean equals(Object authors) {
         if (authors == null) {
             return false;
         }
@@ -30,6 +34,7 @@ public class Author {
         Author author = (Author) authors;
         return name.equals((author.getName()) && nameAuthor.equals(author.surnameAuthor));
     }
+
     public int hashCode() {
         return java.util.Objects.hash(nameAuthor, surnameAuthor);
 
